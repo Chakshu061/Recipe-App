@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@font-face {
+    font-family: 'keep_on_truckinregular';
+    src: url('keep-on-truckin.regular.woff2') format('woff2'),
+         url('keep-on-truckin.regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-image : url('./34147.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    max-height: 370vh;
+}
+
+img {
+    max-width: 100%;
+    
+}   
+
+.container{
+    width: 1400px;
+    background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: width .1s;
+    overflow: hidden;
+    margin: 0;
+    background-color: #fff;
+    border-radius : 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+   padding: 1rem;
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+}
+
+
+header input {
+    border: none;
+    padding: 1rem 12rem;
+    border: none;
+    background-color: #eee;
+    align-items: left;
+    outline: none;
+}
+
+header button {
+    padding: 1rem 1rem;
+    border: none;
+}
+ 
+header button:hover{
+    cursor: pointer;
+ }
+
+
