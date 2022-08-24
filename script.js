@@ -132,7 +132,8 @@ function addMealFav(mealData) {
         <img
             src="${mealData.strMealThumb}"
             alt="${mealData.strMeal}"
-        /><span>${mealData.strMeal}</span>
+        />
+        <span>${mealData.strMeal}</span>
         <button class="clear"><i class="fas fa-window-close"></i></button>
     `;
 
@@ -152,15 +153,10 @@ function addMealFav(mealData) {
 }
 
 function showMealInfo(mealData) {
-    // clean it up
     mealInfoEl.innerHTML = "";
-
-    // update the Meal info
     const mealEl = document.createElement("div");
 
     const ingredients = [];
-
-    // get ingredients and measures
     for (let i = 1; i <= 20; i++) {
         if (mealData["strIngredient" + i]) {
             ingredients.push(
@@ -195,8 +191,6 @@ function showMealInfo(mealData) {
     `;
 
     mealInfoEl.appendChild(mealEl);
-
-    // show the popup
     mealPopup.classList.remove("hidden");
 }
 
